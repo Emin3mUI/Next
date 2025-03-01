@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #131313;
+}
+
+
+.navbar{
+    background-color: #131313;
+    overflow: hidden;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.navlinks{
+    display: flex;
+    padding: 5px 10px;
+    float: right;
+    padding-right: 10%;
+}
+
+.navbar a.logo{
+    float: left;
+}
+
+.navbar a:hover:not(.signup-button) {
+    color: #CE7279;
+}
+
+.signup-button{
+    background-color: #CE7279;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.signup-button:hover{
+    background-color: #3F31FE;
+    color: #FFFFFF;
+    
+}
+
+.left-side{
+    color: white;
+    padding-top: 13%;
+    padding-left: 8%;
+}
+.left-side p{
+    font-weight: bolder;
+    font-size: 35px;
+    padding-top: 1%;
+    font-family: 'Playwrite IT Moderna', sans-serif;
+}
+.left-side h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.fading-text-1 {
+    background: linear-gradient(to bottom,#FFA38E, #E82143); /* Fades from red to blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hides original text color */
+    display: inline-block; /* Ensures it applies correctly */
+}
+
+.fading-text-2 {
+    background: linear-gradient(to right,#40C4ED, #8859DB); /* Fades from red to blue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hides original text color */
+
+}
+
+.home-button{
+    border-radius: 10px;
+    background-color: #CE7279;
+    color: white;
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(to left,#E0476F 50%, #392ADF 50%) right;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.home-button:hover{
+    background-position: left;
+}
