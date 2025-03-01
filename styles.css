@@ -52,6 +52,9 @@
 }
 
 .left-side{
+    position: relative;
+    float: left;
+    display: block;
     color: white;
     padding-top: 13%;
     padding-left: 8%;
@@ -69,19 +72,22 @@
 
 .fading-text-1 {
     background: linear-gradient(to bottom,#FFA38E, #E82143); /* Fades from red to blue */
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; /* Hides original text color */
     display: inline-block; /* Ensures it applies correctly */
 }
 
 .fading-text-2 {
     background: linear-gradient(to right,#40C4ED, #8859DB); /* Fades from red to blue */
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; /* Hides original text color */
 
 }
 
+
 .home-button{
+    position: relative;
+    top: 50px;
     border-radius: 10px;
     background-color: #CE7279;
     color: white;
@@ -97,4 +103,12 @@
 
 .home-button:hover{
     background-position: left;
+}
+
+.right-side{
+    position: relative;
+    float: right;
+    display: block;
+    padding-top: 3%;
+    padding-right: 12%;
 }
