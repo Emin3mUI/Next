@@ -1,15 +1,20 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     background-color: #131313;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .navbar{
     background-color: #131313;
-    overflow: hidden;
+    
 }
 
 .navbar a{
@@ -29,13 +34,15 @@
 
 .navbar a.logo{
     float: left;
+    padding-left: 3%;
 }
 
 .navbar a:hover:not(.signup-button) {
     color: #CE7279;
 }
 
-.signup-button{
+
+.signup-button {
     background-color: #CE7279;
     color: white;
     border: none;
@@ -45,47 +52,45 @@
     cursor: pointer;
 }
 
-.signup-button:hover{
+.signup-button:hover {
     background-color: #3F31FE;
     color: #FFFFFF;
-    
 }
 
-.left-side{
-    position: relative;
+.left-side {
     float: left;
-    display: block;
+    width: 50%;
     color: white;
     padding-top: 13%;
     padding-left: 8%;
 }
-.left-side p{
+
+.left-side p {
     font-weight: bolder;
     font-size: 35px;
     padding-top: 1%;
     font-family: 'Playwrite IT Moderna', sans-serif;
 }
-.left-side h1{
+
+.left-side h1 {
     font-size: 70px;
     font-weight: bold;
 }
 
 .fading-text-1 {
-    background: linear-gradient(to bottom,#FFA38E, #E82143); /* Fades from red to blue */
+    background: linear-gradient(to bottom, #FFA38E, #E82143);
     background-clip: text;
-    -webkit-text-fill-color: transparent; /* Hides original text color */
-    display: inline-block; /* Ensures it applies correctly */
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .fading-text-2 {
-    background: linear-gradient(to right,#40C4ED, #8859DB); /* Fades from red to blue */
+    background: linear-gradient(to right, #40C4ED, #8859DB);
     background-clip: text;
-    -webkit-text-fill-color: transparent; /* Hides original text color */
-
+    -webkit-text-fill-color: transparent;
 }
 
-
-.home-button{
+.home-button {
     position: relative;
     top: 50px;
     border-radius: 10px;
@@ -96,19 +101,115 @@
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
-    background: linear-gradient(to left,#E0476F 50%, #392ADF 50%) right;
+    background: linear-gradient(to left, #E0476F 50%, #392ADF 50%) right;
     background-size: 200% 100%;
     transition: background-position 0.5s ease-in-out;
 }
 
-.home-button:hover{
+.home-button:hover {
     background-position: left;
 }
 
-.right-side{
-    position: relative;
+.right-side {
     float: right;
-    display: block;
+    width: 50%; 
     padding-top: 3%;
-    padding-right: 12%;
 }
+
+.right-side img {
+    padding-left: 15%;
+    width: 82%;
+}
+
+
+.secondary-text {
+    clear: both; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.secondary-text h1 {
+    padding-top: 5%;
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #eb837b, #ce4469);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+.service-card {
+    background-color: #131313; /* Card background color */
+    padding: 20px; /* Spacing inside the card */
+    text-align: center; /* Center-align text */
+    max-width: 350px; /* Set a max width for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-left: 25%;
+    transform: scale(1.6); /* Initial size of the card */
+    margin-top: 12%;
+}
+
+.service-card:hover {
+    transform: scale(1.7); /* Scale up the card */
+}
+
+.icon img {
+    width: 100%; /* Make the image responsive */
+    margin-bottom: 15px; /* Spacing below the image */
+}
+
+.title {
+    font-size: 24px; /* Heading size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Spacing below the heading */
+    color: #333333; /* Text color */
+}
+
+.description {
+    font-size: 16px; /* Description size */
+    color: #666666; /* Text color */
+    margin-bottom: 20px; /* Spacing below the description */
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px; /* Button padding */
+    background-color: #007BFF; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.learn-more:hover {
+    background: linear-gradient(to right, ); /* Darker background on hover */
+}
+
+.positioning {
+    transform: translateY(-120px); /* Move the content up by 20px */
+    background-color: transparent;
+    margin-right: 15%;
+}
+
+.positioning p, .positioning h3, .positioning a{
+    background-color: transparent;
+    transform: scale(0.8);
+    color: white;
+}
+
+.positioning a{
+    background-color: #CE7279;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.positioning a:hover {
+    background-color: #3F31FE;
+    color: #FFFFFF;
+} 
